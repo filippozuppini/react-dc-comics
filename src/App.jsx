@@ -1,12 +1,13 @@
-import { useState } from 'react'
-// import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import AppNavBar from './assets/components/AppNavBar'
+import './assets/css/navbar.css'
 
 function App() {
 
   return (
     <>
 
-    <h1>Ciao</h1>
+    <AppNavBar></AppNavBar>
 
     </>
   )
