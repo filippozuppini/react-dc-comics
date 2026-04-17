@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import AppNavBar from './assets/components/AppNavBar'
-import './assets/css/navbar.css'
+import AppMain from './assets/components/AppMain'
+
+
 
 function App() {
 
@@ -8,6 +10,7 @@ function App() {
     <>
 
     <AppNavBar></AppNavBar>
+    <AppMain></AppMain>
 
     </>
   )

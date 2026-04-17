@@ -1,5 +1,5 @@
 import DcLogo from "../img/dc-logo.png";
-
+import '../css/navbar.css'
 
 export default function AppNavBar() {
 

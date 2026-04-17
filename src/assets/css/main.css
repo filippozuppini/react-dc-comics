@@ -1,0 +1,31 @@
+.content {
+    padding: 10% 15%;
+    color: white;
+    height: 40px;
+    background-color: rgb(37, 37, 37);
+}
+
+
+.sub_content{
+    color: white;
+    font-weight: 600;
+    background-color: rgb(0, 119, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    
+}
+
+.items {
+
+    padding: 0 2rem;    
+    
+    img{
+        width: 50px;
+        padding-right: 1rem;
+    }
+} 
+
+    
