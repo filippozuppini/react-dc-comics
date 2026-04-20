@@ -3,6 +3,63 @@ import '../css/navbar.css'
 
 export default function AppNavBar() {
 
+
+    // const navItem = ["CHARACTERS","COMICS","MOVIES","TV","GAMES","COLLECTIBLES","VIDEOS","FANS","NEWS","SHOP"]
+
+    const navItem = [
+    {
+        id: 1,
+        Text: "CHARACTERS",
+        path: "/characters"
+    },
+    {
+        id: 2,
+        Text: "COMICS",
+        path: "/comics"
+    },
+    {
+        id: 3,
+        Text: "MOVIES",
+        path: "/movies"
+    },
+    {
+        id: 4,
+        Text: "TV",
+        path: "/tv"
+    },
+    {
+        id: 5,
+        Text: "GAMES",
+        path: "/GAMES"
+    },
+    {
+        id: 6,
+        Text: "COLLECTIBLES",
+        path: "/collectibles"
+    },
+    {
+        id: 7,
+        Text: "VIDEOS",
+        path: "/videos"
+    },
+    {
+        id: 8,
+        Text: "FANS",
+        path: "/fans"
+    },
+    {
+        id: 9,
+        Text: "NEWS",
+        path: "/news"
+    },
+    {
+        id: 10,
+        Text: "SHOP",
+        path: "/shop"
+    },
+
+    ]
+
     return (
         <>
 
@@ -17,36 +74,13 @@ export default function AppNavBar() {
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">CHARACTERS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">COMICS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">MOVIES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TV</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">GAMES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">COLLECTIBLES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">VIDEOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">FANS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">NEWS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SHOP</a>
-                            </li>
+                            
+                            {navItem.map((item) => (
+                                <li class="nav-item">
+                                    <a key={item.id} class="nav-link" aria-current="page" href={path}>{item.Text}</a>
+                                </li>
+                            ))}
+                            
                         </ul>
                     </div>
 
