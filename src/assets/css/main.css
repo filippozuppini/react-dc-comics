@@ -4,11 +4,44 @@
     box-sizing: border-box;
 }
 
+.hero{
+    background-image: url(../img/jumbotron.jpg);
+    height: 400px;
+}
+
 .content {
     padding: 10% 15%;
     color: white;
-    height: 40px;
     background-color: rgb(37, 37, 37);
+    position: relative;
+
+    .title{
+        position: absolute;
+        top: -35px;
+        width: 300px;
+        background-color: #0077ff;
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+
+    .container {
+        position: relative;
+        
+        .card{
+            background-color: transparent;
+            border: none;
+
+            a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    
+        img{
+            width: 100px;
+        }
+    }
 }
 
 

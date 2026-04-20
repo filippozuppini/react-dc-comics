@@ -1,5 +1,4 @@
-
-.main-footer{
+.main-footer {
     padding: 10px 15%;
     background-image: url(../img/footer-bg.jpg);
     background-size: cover;
@@ -8,37 +7,37 @@
 
     .list {
 
-    padding: 1rem;
-    
-    h3{
-        color: white;
-    }
-    
+        padding: 1rem;
 
-    ul{
-        color: white;
-        list-style-type: none;
-        padding: 0;
-
-        a{
-            color: rgb(177, 177, 177);
-            text-decoration: none;
+        h3 {
+            color: white;
         }
+
+
+        ul {
+            color: white;
+            list-style-type: none;
+            padding: 0;
+
+            a {
+                color: rgb(177, 177, 177);
+                text-decoration: none;
+            }
+        }
+
     }
 
-}
-    
-    
+
 }
 
-.menu-section{
+.menu-section {
     display: flex;
     flex-wrap: wrap;
 }
 
 
 
-.sub-footer{
+.sub-footer {
     background-color: rgb(39, 39, 39);
     padding: 20px 15%;
     display: flex;
@@ -46,7 +45,7 @@
     align-items: center;
 
 
-    .cta a{
+    .cta a {
         text-decoration: none;
         font-weight: 700;
         color: white;
@@ -54,16 +53,13 @@
         border: 2px solid rgb(0, 81, 255);
     }
 
-    .social-links{
+    .social-links {
 
-        h3{
+        h3 {
             color: rgb(0, 81, 255);
         }
 
     }
 
-    
-} 
 
-    
-
+}
