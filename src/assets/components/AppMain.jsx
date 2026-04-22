@@ -1,10 +1,10 @@
-
-import '../css/main.css'
 import ImgShopLocator from '../img/buy-comics-shop-locator.png'
 import ImgDigitalComics from '../img/buy-comics-digital-comics.png'
 import ImgMerchandise from '../img/buy-comics-merchandise.png'
 import ImgPowerVisa from '../img/buy-dc-power-visa.svg'
 import ImgSubscription from '../img/buy-comics-subscriptions.png'
+import AppCards from './AppCard'
+import '../css/main.css'
 
 
 export default function AppMain() {
@@ -175,22 +175,12 @@ export default function AppMain() {
                     <h3>CURRENT SERIES</h3>
                 </div>
 
-                <div className="container text-left">
-                    <div className="row align-items-start">
-                        {
-                            comics.map((item) => (
-                                <div className="col" key={item.id}>
-                                    <div className="card">
-                                        <img src={item.thumb} />
-                                        <a href="#">{item.title}</a>
-                                    </div>
-                                </div>
-                            ))
-                        }
+                {comics.map((comics) => (
 
+                    <AppCards key={comics.id} comics={comics} />
 
-                    </div>
-                </div>
+                ))
+                }
 
             </div>
 

@@ -76,11 +76,10 @@ export default function AppNavBar() {
                         <ul className="navbar-nav ms-auto">
 
                             {navItem.map((item) => (
-                                <li className="nav-item">
-                                    <a key={item.id} className="nav-link" aria-current="page" href={item.path}>{item.Text}</a>
+                                <li key={item.id} className="nav-item">
+                                    <a className="nav-link" aria-current="page" href={item.path}>{item.Text}</a>
                                 </li>
                             ))}
-
                         </ul>
                     </div>
 
